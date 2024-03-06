@@ -1,4 +1,4 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     font-family: 'Poppins',sans-serif;
@@ -36,15 +36,6 @@ body{
     margin-right: 4vh;
     font-size: 2.5vh;
 }
-/* .search button {
-    border: 0;
-    outline: 0;
-    background: #ebfffc;
-    border-radius: 50%;
-    width: 12vw;
-    height: 10vh;
-    cursor: pointer;
-} */
 .search button img{
     width: 5vw;
 }
@@ -183,8 +174,8 @@ body {
 
 .error {
     color: #ff3333;
-}
-
+} */
+/* 
 .search button {
     border: 0;
     outline: 0;
@@ -207,7 +198,8 @@ body {
     overflow: hidden;
     position: relative;
 }
-.search button:before {
+
+ .search button:before {
     content: '';
     position: absolute;
     top: 50%;
@@ -218,7 +210,237 @@ body {
     background: linear-gradient(45deg, #00feba, #5b548a);
     border-radius: 50%;
     z-index: -1;
+} */
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
 }
-.search button:hover:before {
-    background: linear-gradient(45deg, #5b548a, #00feba);
+
+.card {
+    width: 350px;
+    height: 600px;
+    background-color: #fab8b8;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    padding: 20px;
+    position: relative;
 }
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: -30px;
+}
+
+.error {
+    color: red;
+    text-align: center;
+    margin-bottom: 20px;
+    display: none;
+}
+
+.weather {
+    text-align: center;
+}
+
+.weather-icon {
+    width: 100px;
+    height: 100px;
+}
+
+.temp {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.city {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.deatils {
+    display: flex;
+    justify-content: space-around;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.humidity {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.wind {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+footer {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    color: #666;
+}
+
+.card {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    flex: 1;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.search button {
+    background: none;
+    border: none;
+}
+
+.weather {
+    text-align: center;
+}
+
+.weather-icon {
+    width: 100px;
+    height: 100px;
+}
+
+.deatils {
+    display: flex;
+    justify-content: space-around;
+}
+
+.col {
+    flex: 1;
+}
+@media only screen and (max-width: 768px) {
+    .card {
+        padding: 10px;
+    }
+    
+    .search input {
+        width: 70%;
+    }
+    
+    .weather {
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .card {
+        padding: 5px;
+    }
+    
+    .search input {
+        width: 60%;
+    }
+    
+    .weather-icon {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .deatils {
+        flex-direction: column;
+    }
+    
+}
+
+
+.deatils {
+    display: flex;
+    justify-content: space-around;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.humidity, .wind {
+    font-size: 18px;
+    margin-bottom: 5px;
+} 
+.temp{
+    text-align: center;
+    
+}
+.city{
+    text-align: center;
+}
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: -30px;
+    transition: transform 0.3s ease; 
+}
+
+button img {
+    width: 25px;
+    height: 25px;
+    filter: invert(40%) sepia(15%) saturate(2561%) hue-rotate(168deg) brightness(98%) contrast(92%);
+}
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin-left: 1px;
+}
+
+button:hover {
+    transform: scale(1.15);
+}
+
